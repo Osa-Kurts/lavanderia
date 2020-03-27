@@ -23,13 +23,7 @@ git add <nome do arquivo>
 mandar o arquivo para uma região de segurança
 
 git commit -m "Texto descritivo"
-manda os aruivos da região de segurança para o repositório
+manda os arquivos da região de segurança para o repositório
 
 git branch -a
 mostra a lista das branchs
-
-\cd
-sai da pasta atual
-
-Ctrl + L
-limpa o terminal
