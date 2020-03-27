@@ -1,0 +1,35 @@
+git clone
+link do github que cria um clone do repositório
+
+git checkout -b <nome da branch>
+cria uma nova branch
+
+git pull origin master
+trazer os arquivos do repositório para o local
+
+git push origin <nome da branch>
+manda os arquivos locais para o repositório
+
+git rebase master
+troca os arquivos locais pelo da master
+
+git status
+mostra os arquivos alterados
+
+git diff
+mostra as alterações feitas nos arquivos
+
+git add <nome do arquivo>
+mandar o arquivo para uma região de segurança
+
+git commit -m "Texto"
+manda os aruivos da região de segurança para o repositório
+
+git branch -a
+mostra a lista das branchs
+
+\cd
+sai da pasta atual
+
+Ctrl + L
+limpa o terminal
