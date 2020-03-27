@@ -11,7 +11,7 @@ git push origin <nome da branch>
 manda os arquivos locais para o repositório
 
 git rebase master
-troca os arquivos locais pelo da master
+pega as alterações da master e aplica na branch
 
 git status
 mostra os arquivos alterados
