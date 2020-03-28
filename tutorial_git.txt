@@ -27,3 +27,6 @@ manda os arquivos da região de segurança para o repositório
 
 git branch -a
 mostra a lista das branchs
+
+git branch -d
+deleta a branch
