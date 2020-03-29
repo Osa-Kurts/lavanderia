@@ -1,0 +1,5 @@
+\cd
+sai da pasta atual
+
+Ctrl + L
+limpa o terminal
