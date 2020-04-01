@@ -1,17 +1,20 @@
-git clone
+﻿git clone
 link do github que cria um clone do repositório
 
+git checkout <nome da branch>
+muda de branch
+
 git checkout -b <nome da branch>
-cria uma nova branch
+cria e muda para uma nova branch
 
 git pull origin master
-trazer os arquivos do repositório para o local
+traz os arquivos do repositório para a master local
 
 git push origin <nome da branch>
 manda os arquivos locais para o repositório
 
 git rebase master
-pega as alterações da master e aplica na branch
+pega as alterações da master local e aplica na branch
 
 git status
 mostra os arquivos alterados
@@ -20,13 +23,19 @@ git diff
 mostra as alterações feitas nos arquivos
 
 git add <nome do arquivo>
-mandar o arquivo para uma região de segurança
+manda o arquivo para o "index" (região de segurança)
 
 git commit -m "Texto descritivo"
-manda os arquivos da região de segurança para o repositório
+permite que os arquivos sejam mandados do index para o repositório
 
-git branch -a
+git branch -b <nome da branch>
+cria uma nova branch
+
+git branch -a 
 mostra a lista das branchs
 
-git branch -d
+git branch -d <nome da branch>
 deleta a branch
+
+git branch -D <nome da branch>
+força a deleção da branch
