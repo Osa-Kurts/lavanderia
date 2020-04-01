@@ -28,10 +28,10 @@ jobs:
       - run: touch storage/testing.sqlite
       - run: php artisan migrate --force
 
-      - run: ./vendor/bin/phpunit --log-junit reports/tests-result.xml --coverage-html reports/coverage
+      - run: ./vendor/bin/phpunit --log-junit reports/junit.xml --coverage-html reports/coverage
 
       - store_test_results:
-        path: reports/tests-result.xml
+          path: reports
 
       - store_artifacts:
-          path:  reports/coverage
+          path:  reports
