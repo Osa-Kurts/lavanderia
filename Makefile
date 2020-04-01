@@ -31,13 +31,13 @@ shell:
 	$(call dcr,sh)
 
 update:
-	$(call run-app,composer update)
+	$(call dcr,composer update)
 
 lint:
-	$(call run-app,composer run phpcs && composer run phpmd)
+	$(call dcr,sh -c "composer run phpcs && composer run phpmd")
 
 test:
-	$(call run-app,php artisan test)
+	$(call dcr,php artisan test)
 
 define dc
 	docker-compose $1
@@ -45,8 +45,4 @@ endef
 
 define dcr
 	$(call dc,run --rm app $1)
-endef
-
-define run-app
-	$(call dcr, sh -c "cd app && $1")
 endef
